@@ -206,7 +206,8 @@
 		        var scroll_speed = 2;
 		        var $this = $(this);
 		        $(window).scroll(function() {
-		            var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed)-350;
+		            var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed) - $window.height()/3.;
+		            // var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed) - 350;
 		            var bgPosition = 'center '+ bgScroll + 'px';
 		            $this.css('background-position', bgPosition);
 		        });

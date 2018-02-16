@@ -139,6 +139,7 @@ body
 
 hr {
     height: 3px;
+    border-color: #cccccc;
 }
 /* ===================== */
 /*  Def. properties for: */
@@ -237,6 +238,17 @@ hr {
     padding-left: 10px;
 }
 /* --------- contacts ------------ */
+
+
+
+footer{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e8e8e8;
+  width: 100%;
+}
 
 
 

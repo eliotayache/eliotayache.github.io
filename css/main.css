@@ -64,7 +64,8 @@ body
     text-shadow: 3px 3px 3px black;
 
 
-    background-size: 100%;
+    /*background-size: 100%;*/
+    background-size: cover;
 
     /*background: url('/images/galaxyHeader.jpg') center 0 no-repeat fixed;*/
     background-image: url("/images/Chili.jpg");

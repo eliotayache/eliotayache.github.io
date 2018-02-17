@@ -120,9 +120,19 @@ body
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
 }
-.image-avatar{
+
+.scroll-down{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b7b7b7;
 }
 
+.scroll-down img{
+  opacity: 0.25;
+  height: 50px;
+}
 
 /* ===================== */
 /*  Def. properties for: */

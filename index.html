@@ -127,6 +127,10 @@
 			<p><strong>I am a 1st year PhD candidate at the  <a href="http://www.bath.ac.uk/" class="active">University of Bath</a> working in the <a href="http://www.bath.ac.uk/physics/research/astrophysics/" class="active">Astrophysics Research Group</a>. The main focus of my research consists in numerical dynamical simulation of ultra-relativistic flows, applied to the study of Gamma Ray Bursts (GRB). Please find a list of recent projects under <a href="#research" class="active">'research'</a>.
 			</strong></p>
 		</div>
+		<div class="scroll-down">
+			<h3>Scroll Down</h3>
+			<img src="images/down-arrow.png">
+		</div>
 		<!-- Section 2 -->
 		<div data-aos="flip-right" data-aos-offset=350 data-aos-duration="1000"><hr/></div>
 		<div id="research" class="section" data-aos="fade-up" data-aos-offset=400>
@@ -165,26 +169,26 @@
 			</p>
 		</div>
 		<!-- Section 3 -->
-		<div data-aos="flip-right" data-aos-offset=350 data-aos-duration="1000"><hr/></div>
-		<div id="TeachingOutreach" class="section" data-aos="fade-up" data-aos-offset=400>
+		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="TeachingOutreach" class="section" data-aos="fade-up" data-aos-offset=300>
 			<h1>Teaching and Outreach</h1>
 			<p>Coming soon</p>
 		</div>
 		<!-- Section 4 -->
-		<div data-aos="flip-right" data-aos-offset=350 data-aos-duration="1000"><hr/></div>
-		<div id="cv" class="section" data-aos="fade-up" data-aos-offset=400>
+		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="cv" class="section" data-aos="fade-up" data-aos-offset=300>
 			<h1>CV</h1>
 			<p>Coming soon</p>
 		</div>
 		<!-- Section 5 -->
-		<div data-aos="flip-right" data-aos-offset=350 data-aos-duration="1000"><hr/></div>
-		<div id="OtherStuff" class="section" data-aos="fade-up" data-aos-offset=400>
+		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="OtherStuff" class="section" data-aos="fade-up" data-aos-offset=300>
 			<h1>Other Stuff</h1>
 			<p>Coming soon</p>
 		</div>
 		<!-- Section6 -->
-		<div data-aos="flip-right" data-aos-offset=350 data-aos-duration="1000"><hr/></div>
-		<div id="contact" class="section" data-aos="fade-up" data-aos-offset=400>
+		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="contact" class="section" data-aos="fade-up" data-aos-offset=300>
 			<h1>Contact</h1>
 			<dl class="contact-info">
 			    <dt>Full Name: </dt> <dd>Eliot Ayache</dd>
@@ -266,6 +270,18 @@
 		            $this.css('background-position', bgPosition);
 		        });
 		    });
+		});
+	</script>
+
+	<script>
+		$(window).bind('scroll', function() {
+		     if ($(window).scrollTop() > 180) {
+		         $('.scroll-down').hide();
+		     }
+		     else {
+		         $('.scroll-down').show();
+		         $(".scroll-down").css("opacity", 1 - $(window).scrollTop() / 180);
+		     }
 		});
 	</script>
 

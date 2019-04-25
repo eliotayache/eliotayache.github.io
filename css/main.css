@@ -39,7 +39,12 @@ body
 }
 
 .section h1{
+  margin-bottom: 40px;
   font-family: "Quicksand-Regular";
+}
+
+.section h2{
+  margin-top: 60px;
 }
 
 

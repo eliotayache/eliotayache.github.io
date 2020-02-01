@@ -57,6 +57,22 @@ body
 /*    title image        */
 /* ===================== */
 
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialmedia img{
+  display: block;
+  max-width:50px;
+  max-height:50px;
+  width: auto;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
 .titleimage
 {
     height: 400px;
@@ -87,6 +103,7 @@ body
   font-family: "Quicksand-Italic";
   font-style: italic;
 }
+
 
 .titleimage header{
   width: 45%;

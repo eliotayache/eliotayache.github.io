@@ -38,6 +38,12 @@ body
   max-width: 60%;
 }
 
+@media (max-width:500px) {
+   .text {
+     max-width: 90%;
+   }
+}
+
 .section h1{
   margin-bottom: 40px;
   font-family: "Quicksand-Regular";

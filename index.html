@@ -70,9 +70,11 @@
 		<div class="titleimage">
 			<header>
 				<span class="image-avatar"><img class="img-avatar" src="images/profilepic2.jpg" alt="Avatar" width="140" height="140"></span>
-				<p class="h1-logo" id="logo"><a href="#"> <strong>Eliot Ayache</strong></a></p>
+				<div class="titles">
+					<p class="h1-logo" id="logo"><a href="#"> <strong>Eliot Ayache</strong></a></p>
+				</div>
 			</header>
-			<p class="p-logo">High energy astrophysics, numerical simulations, gamma-ray bursts</p>
+			<p class="p-logo">High energy astrophysics, numerical simulations, gamma-ray bursts</p>					
 			<div class="socialmedia">
 				<a href="https://github.com/eliotayache"><img src="images/GitHub-Mark.png"></a>
 				<a href="https://www.linkedin.com/in/eliot-ayache-21641088/"><img src="images/linkedin.png"></a>
@@ -153,6 +155,9 @@
 
 			<h2>Machine Learning</h2>
 			<p>Coming Soon</p>
+
+			<h2>Conference talks and seminars</h2>
+			<p>Yamada conference yohomaha</p>
 			<!-- <img src="images/wordcloud.png" width=50% align="top"> -->
 			<!-- <h3>Phenomenology and observational features of the afterglow</h3> -->
 			<!-- <img src="images/firstburst.gif" alt="First Burst" width="450px" align="right"> -->
@@ -194,7 +199,12 @@
 		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
 		<div id="OtherStuff" class="section" data-aos="fade-up" data-aos-offset=300>
 			<h1>Other Stuff</h1>
-			<p>Coming soon</p>
+			<h2>Useful links</h2>
+			<a href="https://ui.adsabs.harvard.edu/classic-form" class="active">NASA Astrophysics Data System</a> <br>
+			<a href="https://stat.ethz.ch/education/semesters/ss2012/regression/Part5.pdf" class="active">Linear regression</a> <br>
+			<a href="http://detexify.kirelabs.org/classify.html" class="active">Detexify</a> <br>
+			<a href="https://devhints.io/vim" class="active">Vim Cheat Sheet</a>
+			<p>More stuff coming soon</p>
 		</div>
 		<!-- Section6 -->
 		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
@@ -274,7 +284,7 @@
 		        $(window).scroll(function() {
 		            // var bgScroll = -(($win.scrollTop() - $this.offset().top) / scroll_speed);
 		            // var bgScroll = -(($win.scrollTop() - $this.offset().top) / scroll_speed) - $win.height()/3.;
-		            var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed) - 350;
+		            var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed) - 250;
 		            var bgPosition = 'center '+ bgScroll + 'px';
 		            $this.css('background-position', bgPosition);
 		        });

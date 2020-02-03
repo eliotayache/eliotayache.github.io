@@ -50,8 +50,9 @@ body
 }
 
 .section h2{
-  margin-top: 60px;
+  margin-top: 40px;
   /*text-align: right;*/
+  font-size: 24px;
   font-family: "Quicksand-Regular";
   /*padding-right: 20px;*/
 }
@@ -93,7 +94,7 @@ body
     font-size: 3em;
     text-shadow: 3px 3px 3px black;
 
-    font-size: 2.3vw;
+    font-size: 28px;
 
     /*background-size: 100%;*/
     background-size: cover;
@@ -102,7 +103,7 @@ body
     background-image: url("/images/Chili.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center -350px;
+    background-position: center -250px;
     z-index: -1;
 }
 
@@ -113,12 +114,27 @@ body
 
 
 .titleimage header{
-  width: 45%;
+  width: 90%;
+  max-width: 630px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  font-size: 2.7vw;
+  justify-content: center;
+  font-size: 30px;
 }
+
+
+.titleimage p{
+  padding: 20px 50px 0px 50px;
+  text-align: center;
+}
+
+.titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+
 
 .p-logo{
   font-size: 0.5em;
@@ -142,6 +158,10 @@ body
 }
 
 
+.image-avatar{
+  padding: 10px 10px 10px 10px;
+}
+
 .img-avatar {
   border-radius: 50%;
   border-width: 3px;
@@ -153,6 +173,16 @@ body
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
 }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 650px) {
+    .titleimage header{font-size: 20px}
+    .img-avatar{
+      max-width: 100px;
+      max-height: 100px;
+    }
+}
+
 
 .scroll-down{
   margin-top: 40px;
@@ -195,7 +225,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 50px; /* Full-height: remove this if you want "auto" height */
+    height: 30px; /* Full-height: remove this if you want "auto" height */
     width: 100%; /* Set the width of the sidebar */
     background-color: white;
     border-width: 0;
@@ -228,7 +258,7 @@ hr {
     padding: 6px 8px 6px 16px;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .section::before{
@@ -246,9 +276,10 @@ hr {
 }
 
 #navbar a {
+  font-family: Quicksand-Regular;
   font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase; 
+  font-size: 20px;
+  /*text-transform: uppercase; */
   /*color: #991;*/
 }
 

@@ -67,19 +67,35 @@
 		<!--  TITLE IMAGE      -->
 		<!-- ================= -->
 
-		<div class="titleimage">
-			<header>
-				<span class="image-avatar"><img class="img-avatar" src="images/profilepic2.jpg" alt="Avatar" width="140" height="140"></span>
-				<div class="titles">
-					<p class="h1-logo" id="logo"><a href="#"> <strong>Eliot Ayache</strong></a></p>
-				</div>
-			</header>
-			<p class="p-logo">High energy astrophysics, numerical simulations, gamma-ray bursts</p>					
-			<div class="socialmedia">
-				<a href="https://github.com/eliotayache"><img src="images/GitHub-Mark.png"></a>
-				<a href="https://www.linkedin.com/in/eliot-ayache-21641088/"><img src="images/linkedin.png"></a>
-				<a href="https://twitter.com/eliot_ayache"><img src="images/twitter.png"></a>
+		<div class="website-header">
+
+			<div class="twitter">
+				<a class="twitter-timeline" href="https://twitter.com/eliot_ayache?ref_src=twsrc%5Etfw"
+				data-chrome="transparent noscrollbar noheader nofooter noborders"
+				data-width="400"
+				data-height="400">
+				Tweets by eliot_ayache</a> 
+				<script async src="https://platform.twitter.com/widgets.js" 
+				charset="utf-8">
+				</script>
 			</div>
+
+
+			<div class="titleimage">
+				<header>
+					<span class="image-avatar"><img class="img-avatar" src="images/profilepic2.jpg" alt="Avatar" width="160" height="160"></span>
+					<div class="titles">
+						<p class="h1-logo" id="logo"><a href="#"> <strong>Eliot Ayache</strong></a></p>
+					</div>
+				</header>
+				<p class="p-logo">High energy astrophysics, numerical simulations, gamma-ray bursts</p>					
+				<div class="socialmedia">
+					<a href="https://github.com/eliotayache"><img src="images/GitHub-Mark.png"></a>
+					<a href="https://www.linkedin.com/in/eliot-ayache-21641088/"><img src="images/linkedin.png"></a>
+					<a href="https://twitter.com/eliot_ayache"><img src="images/twitter.png"></a>
+				</div>
+			</div>	
+		
 		</div>
 
 
@@ -141,6 +157,7 @@
 		<div data-aos="flip-right" data-aos-offset=350 data-aos-duration="1000"><hr/></div>
 		<div id="research" class="section" data-aos="fade-up" data-aos-offset=400>
 			<h1>Research</h1>
+
 
 			<p>I joined the field of Astrophysics in 2014 when I carried out my first research internship at GEPI, Paris Observatory, on the <strong>automatic estimation of galaxy morphology using machine learning</strong>. Since then, as I was completing my studies, I gathered experience in various fields of Astrophysics, from observational cosmology as I worked on <strong>galaxy cluster detection</strong> at JPL, to <strong>exoplanet internal structure modeling from density measurements</strong> at Geneva Observatory. Eventually, I ended up focusing, for my Master thesis on the <strong>modeling of AGN jet morphology and behavior</strong> using special-relativistic (SR) MHD numerical simulations. 
 			</p>
@@ -278,7 +295,7 @@
 	<script>
 		$(document).ready(function(){
 		    var $win = $(window);
-		    $('.titleimage').each(function(){
+		    $('.website-header').each(function(){
 		        var scroll_speed = 2;
 		        var $this = $(this);
 		        $(window).scroll(function() {
@@ -302,6 +319,26 @@
 		         $(".scroll-down").css("opacity", 1 - $(window).scrollTop() / 180);
 		     }
 		});
+	</script>
+
+
+
+
+	<script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+	    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+	    js.src="//platform.twitter.com/widgets.js";
+	    fjs.parentNode.insertBefore(js,fjs);}
+	}(document,"script","twitter-wjs");
+	</script>
+
+	<script src="customize-twitter-1.1.min.js" type="text/javascript"></script>
+
+	<script>
+	var options = {
+	    "url": "css/twitter.css"
+	};
+	CustomizeTwitterWidget(options);
 	</script>
 
 	</body>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 	<head> 
 		<!-- Required meta tags -->
 	    <meta charset="utf-8">
@@ -22,6 +23,24 @@
 		<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 		</script>
 		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/1140/2.0/1140.min.css"></script>
+
+		<!-- Twitter -->
+		<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+		    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+		    js.src="//platform.twitter.com/widgets.js";
+		    fjs.parentNode.insertBefore(js,fjs);}
+		}(document,"script","twitter-wjs");
+		</script>
+
+		<script src="customize-twitter-1.1.min.js" type="text/javascript"></script>
+
+		<script>
+		var options = {
+		    "url": "css/twitter.css"
+		};
+		CustomizeTwitterWidget(options);
+		</script>
 
 		<!-- Own CSS -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -69,7 +88,7 @@
 
 		<div class="website-header">
 
-			<div class="twitter">
+<!-- 			<div class="twitter">
 				<a class="twitter-timeline" href="https://twitter.com/eliot_ayache?ref_src=twsrc%5Etfw"
 				data-chrome="transparent noscrollbar noheader nofooter noborders"
 				data-width="400"
@@ -80,10 +99,12 @@
 				</script>
 			</div>
 
-
+ -->
 			<div class="titleimage">
 				<header>
-					<span class="image-avatar"><img class="img-avatar" src="images/profilepic2.jpg" alt="Avatar" width="160" height="160"></span>
+					<span class="image-avatar">
+						<img class="img-avatar" src="images/profilepic2.jpg" alt="Avatar" width="160" height="160">
+					</span>
 					<div class="titles">
 						<p class="h1-logo" id="logo"><a href="#"> <strong>Eliot Ayache</strong></a></p>
 					</div>
@@ -144,18 +165,20 @@
 
 		<!-- Section 1 -->
 		<div class="text">
-		<div id="about" class="section" data-aos="fade-up">
-			<h1>About</h1>
-			<p><strong>I am a 3rd year PhD student at the  <a href="http://www.bath.ac.uk/" class="active">University of Bath</a> working in the <a href="http://www.bath.ac.uk/physics/research/astrophysics/" class="active">Astrophysics Research Group</a>. The main focus of my research consists in numerical dynamical simulation of ultra-relativistic flows, applied to the study of Gamma Ray Burst (GRB) afterglows. Please find a list of recent projects under <a href="#research" class="active">'research'</a>.
-			</strong></p>
-		</div>
-		<div class="scroll-down">
-			<h3>Scroll Down</h3>
-			<img src="images/down-arrow.png">
+		<div id="wrap-about" class="wrap-about">
+			<div id="about" class="section" data-aos="fade-up">
+				<h1>About</h1>
+				<p><strong>I am a 3rd year PhD student at the  <a href="http://www.bath.ac.uk/" class="active">University of Bath</a> working in the <a href="http://www.bath.ac.uk/physics/research/astrophysics/" class="active">Astrophysics Research Group</a>. The main focus of my research consists in numerical dynamical simulation of ultra-relativistic flows, applied to the study of Gamma Ray Burst (GRB) afterglows. Please find a list of recent projects under <a href="#research" class="active">'research'</a>.
+				</strong></p>
+			</div>
+			<div class="scroll-down">
+				<h3>Scroll Down</h3>
+				<img src="images/down-arrow.png">
+			</div>
 		</div>
 		<!-- Section 2 -->
-		<div data-aos="flip-right" data-aos-offset=350 data-aos-duration="1000"><hr/></div>
-		<div id="research" class="section" data-aos="fade-up" data-aos-offset=400>
+		<div data-aos="flip-right" data-aos-offset=250 data-aos-duration="1000"><hr/></div>
+		<div id="research" class="section" data-aos="fade-up" data-aos-offset=300>
 			<h1>Research</h1>
 
 
@@ -301,7 +324,7 @@
 		        $(window).scroll(function() {
 		            // var bgScroll = -(($win.scrollTop() - $this.offset().top) / scroll_speed);
 		            // var bgScroll = -(($win.scrollTop() - $this.offset().top) / scroll_speed) - $win.height()/3.;
-		            var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed) - 250;
+		            var bgScroll = -(($win.scrollTop() - $this.offset().top)/ scroll_speed) - 300;
 		            var bgPosition = 'center '+ bgScroll + 'px';
 		            $this.css('background-position', bgPosition);
 		        });
@@ -311,34 +334,23 @@
 
 	<script>
 		$(window).bind('scroll', function() {
-		     if ($(window).scrollTop() > 180) {
+		     if ($(window).scrollTop() > 100) {
 		         $('.scroll-down').hide();
 		     }
 		     else {
 		         $('.scroll-down').show();
-		         $(".scroll-down").css("opacity", 1 - $(window).scrollTop() / 180);
+		         $(".scroll-down").css("opacity", 1 - $(window).scrollTop() / 100);
 		     }
 		});
 	</script>
 
-
-
-
-	<script>
-	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-	    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
-	    js.src="//platform.twitter.com/widgets.js";
-	    fjs.parentNode.insertBefore(js,fjs);}
-	}(document,"script","twitter-wjs");
-	</script>
-
-	<script src="customize-twitter-1.1.min.js" type="text/javascript"></script>
-
-	<script>
-	var options = {
-	    "url": "css/twitter.css"
-	};
-	CustomizeTwitterWidget(options);
+	<script type="text/javascript">
+		window.onload = function() {
+		    if(!window.location.hash) {
+		        window.location = window.location + '#loaded';
+		        window.location.reload();
+		    }
+		}
 	</script>
 
 	</body>

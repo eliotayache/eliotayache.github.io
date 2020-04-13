@@ -169,7 +169,7 @@
 		<div id="wrap-about" class="wrap-about">
 			<div id="about" class="section" data-aos="fade-up">
 				<h1>About</h1>
-				<p><strong>I am a 3rd year PhD student at the  <a href="http://www.bath.ac.uk/" class="active">University of Bath</a> working in the <a href="http://www.bath.ac.uk/physics/research/astrophysics/" class="active">Astrophysics Research Group</a>. The main focus of my research consists in numerical dynamical simulation of ultra-relativistic flows, applied to the study of Gamma Ray Burst (GRB) afterglows. Please find a list of recent projects under <a href="#research" class="active">'research'</a>.
+				<p>I am a 3rd year PhD student at the  <a href="http://www.bath.ac.uk/" class="active">University of Bath</a> working in the <a href="http://www.bath.ac.uk/physics/research/astrophysics/" class="active">Astrophysics Research Group</a>. The main focus of my research consists in numerical dynamical simulation of ultra-relativistic flows, applied to the study of Gamma Ray Burst (GRB) afterglows. Please find a list of recent projects under <a href="#research" class="active">'research'</a>.
 				</strong></p>
 			</div>
 			<div class="scroll-down">
@@ -192,19 +192,50 @@
 			<p>Gamma-ray bursts are the most powerful explosions in the Universe. They trigger ultra-relativistic outflows that, upon impacting the external medium, produces an afterglow with complex and variable temporal features. Being able to understand these features is a key to understanding the general behavior of GRBs. Analytical solutions have been successful, but cannot capture the full emergent complexity of the flow and launching mechanism. Numerical simulations of the dynamics of these events therefore represent a useful tool to put constraints on the current models. However, capturing all features of a fluid flow at such high energies and over such a number of orders of magnitude as the ones involved in GRBs is very challenging.
 			</p>
 
-			<p>More to come!</p>
+			<!-- <p>A GRB involves the creation of a compact object (Black Hole (BH) or Neutron Star (NS)). During the system’s collapse, some of the matter forms a very hot accretion disk around the newly created compact object. This matter is accreted at a super-Eddington rate and can give rise to relativistic outflows. This system is thus referred to as the central engine.
+			</p>
+			 -->
+
+			<h3>Late X-ray flares from the interaction of a reverse shock with a stratified ejecta in GRB afterglows: simulations on a moving mesh <br><a href="https://arxiv.org/abs/2004.04179v1">(arXiv: 2004.04179v1)</a></h3>
+			
+			<div id="paperFlares" class="paper">
+
+				<div class="papertext">
+
+					<p>Late activity of the central engine is often invoked in order to explain the flares observed in the early X-ray afterglow of gamma-ray bursts, either in the form of an active neutron star remnant or (fall-back) accretion onto a black hole. However, these scenarios are not always plausible, in particular when flares are delayed to very late times after the burst. Recently, a new scenario was proposed that suggests X-ray flares can be the result of the passing of a long-lived reverse shock through a stratified ejecta, with the advantage that it does not require late-time engine activity.
+					</p>
+					<p>In this work, we numerically demonstrate this scenario to be physically plausible, by performing onedimensional simulations of ejecta dynamics and emission using our novel moving-mesh relativistic hydrodynamics code. Improved efficiency and precision over previous work enables the exploration of a broader range of setups. We can introduce a more physically realistic description of the circumburst medium mass density. We can also locally trace the cooling of electrons when computing the broadband emission from these setups.
+					</p>
+					<p>We show that the synchrotron cooling timescale can dominate the flare decay time if the stratification in the ejecta is constrained to a localised angular region inside the jet, with size corresponding to the relativistic causal connection angle, and that it corresponds to values reported in observations. We demonstrate that this scenario can produce a large range of observed flare times, suggesting a connection between flares and initial ejection dynamics rather than with late-time remnant activity.
+					</p>
+
+				</div>
+				<div class="paperimages">
+
+					<figure>
+						<img src="images/Ayache2020a/RainbowFlare_lfac.png" alt="lfac profile" width="100%" align="right">
+						<figcaption>
+							Fig. 1: Radial profile of Lorentz factor in the ejecta as a function of cumative mass at different times. M < 1 is ejecta material. M > 1 is shocked external medium material.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img src="images/Ayache2020a/Flare_correct_timescale.png" alt="flare" width="100%" align="right">
+						<figcaption>
+							Fig. 2: X-ray afterglow light-curve contributions from the reverse shock (RS) and forward shock (FS). P is a perturbed region in the flow and NP the rest. the green curve is the optical light-curve from the RS.
+						</figcaption>
+					</figure>
+
+				</div>
+
+			</div>
 
 			<h2>Machine Learning</h2>
 			<p>Coming Soon</p>
 
 			<h2>Conference talks and seminars</h2>
-			<p>Yamada conference yohomaha</p>
-			<!-- <img src="images/wordcloud.png" width=50% align="top"> -->
-			<!-- <h3>Phenomenology and observational features of the afterglow</h3> -->
-			<!-- <img src="images/firstburst.gif" alt="First Burst" width="450px" align="right"> -->
-			<!-- <p>A GRB involves the creation of a compact object (Black Hole (BH) or Neutron Star (NS)). During the system’s collapse, some of the matter forms a very hot accretion disk around the newly created compact object. This matter is accreted at a super-Eddington rate and can give rise to relativistic outflows. This system is thus referred to as the central engine. -->
-			<!-- </p> -->
-			<!-- <img src="images/grb_shell_final.jpg" alt="grb_shell_NASA"> -->
+			<!-- <p>Yamada conference yohomaha</p> -->
+			<p>Coming Soon</p>
 		</div>
 		<!-- Section 3 -->
 
@@ -366,7 +397,7 @@
 		     }
 		});
 	</script>
-
+<!-- 
 	<script type="text/javascript">
 		window.onload = function() {
 		    if(!window.location.hash) {
@@ -375,7 +406,7 @@
 		    }
 		}
 	</script>
-
+ -->
 	</body>
 </html>
 

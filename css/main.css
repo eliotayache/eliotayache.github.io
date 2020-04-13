@@ -205,7 +205,7 @@ body
 }
 
 .section h2{
-  margin-top: 60px;
+  padding-top: 10px;
   /*text-align: right;*/
   font-size: 24px;
   font-family: "Quicksand-Regular";
@@ -264,6 +264,13 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   /*height: calc(75vh - 250px);*/
+}
+
+
+#otherstuff_text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 hr {
@@ -352,6 +359,12 @@ hr {
 /* --------- contacts ------------ */
 .contact-info
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-info .entry{
     display: flex;
     flex-direction: column;
 }

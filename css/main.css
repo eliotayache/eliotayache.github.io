@@ -447,10 +447,42 @@ footer{
     max-height: 90px;
   }
 
-
   .text {
     width: 80%;
   }
+
+  .paper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .papertext {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .paperimages {
+    max-width: 100%;
+  }
+
+  figure {
+    padding-bottom: 20px;
+  }
+
+  figcaption {
+    font-family: georgia;
+    margin: 10px;
+    font-size: 14px;
+    color: #8c8c8c;
+  }
+
+  .img-paperfig{
+    max-width: 480px;
+    max-height: 480px;
+    padding: 10px 10px 10px 10px;
+  }
+
 
   .navbar {
       position: relative;

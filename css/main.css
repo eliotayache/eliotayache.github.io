@@ -294,21 +294,29 @@ hr {
 
 .navbar {
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 30px; /* Full-height: remove this if you want "auto" height */
+    /*height: 30px;  Full-height: remove this if you want "auto" height */
+    height: auto; /* Full-height: remove this if you want "auto" height */
     width: 100%; /* Set the width of the sidebar */
     background-color: white;
     border-width: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+.navbar ul {
+  text-align: center;
+    /*white-space: nowrap;*/
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -357,12 +365,13 @@ hr {
 }
 
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+/* On smaller screens, where height is less than 450px, 
+change the style of the sidebar (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-
+*/
 /*---------------------------------------------------------------*/
 
 
@@ -405,7 +414,7 @@ footer{
 
 
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+/*@media only screen and (min-width: 401px) and (max-width: 960px) {
   .text{
     max-width: 80%;
   }
@@ -417,26 +426,90 @@ footer{
     max-width: 80%;
   }
 }
-
+*/
 
 
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+/*@media only screen and (max-width: 900px) {*/
   body {
-    background-color: #F09A9D; /* Red */
+    /*background-color: #F09A9D; /* Red */
   }
+
+  .navbar {
+      position: relative;
+      /*overflow: hidden;*/
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: auto; /* Full-height: remove this if you want "auto" height */
+      width: 100%; /* Set the width of the sidebar */
+      background-color: white;
+      border-width: 0;
+  }
+
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .text {
+    padding-top: 70px;
+  }
+
+  /* ======================= */
+  /*   Navigation menu links */
+  /* ======================= */
+  .active a {
+      color: black !important;
+      background-color: white !important;
+      text-decoration: underline !important;
+  }
+
+  .navbar a {
+      padding: 6px 8px 6px 16px;
+      text-align: center;
+      text-decoration: none;
+  }
+
+
+  /* When you mouse over the navigation links, change their color */
+  .navbar a:hover {
+      color: black !important;
+  }
+
+  #navbar a {
+    font-family: Quicksand-Regular;
+    font-weight: 400;
+    font-size: 14px;
+    /*text-transform: uppercase; */
+    /*color: #991;*/
+  }
+
+
+  /* On smaller screens, where height is less than 450px, 
+  change the style of the sidebar (less padding and a smaller font size) */
+/*  @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+  }
+*/
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+/*@media only screen and (min-width: 901px) and (max-width: 960px) {*/
   body {
-    background-color: #F5CF8E; /* Yellow */
+    /*background-color: #F5CF8E; /* Yellow */
   }
 
   .titles
   {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .img-avatar{

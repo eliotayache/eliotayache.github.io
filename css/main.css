@@ -431,8 +431,8 @@ footer{
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
-/*@media only screen and (max-width: 900px) {*/
+/*@media only screen and (max-width: 400px) {*/
+@media only screen and (max-width: 900px) {
   body {
     /*background-color: #F09A9D; /* Red */
   }
@@ -447,6 +447,10 @@ footer{
     max-height: 90px;
   }
 
+
+  .text {
+    width: 80%;
+  }
 
   .navbar {
       position: relative;
@@ -512,8 +516,8 @@ footer{
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-/*@media only screen and (min-width: 901px) and (max-width: 960px) {*/
+/*@media only screen and (min-width: 401px) and (max-width: 960px) {*/
+@media only screen and (min-width: 901px) and (max-width: 960px) {
   body {
     /*background-color: #F5CF8E; /* Yellow */
   }

@@ -73,6 +73,16 @@ body
 #Blog{
   margin-top: 150px;
   background-image: url("/images/code.JPG");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.blog-text {
+  color: white;
+  width: 20%;
+  text-align: center;
 }
 
 .titleimage

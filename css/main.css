@@ -437,6 +437,17 @@ footer{
     /*background-color: #F09A9D; /* Red */
   }
 
+  .titles
+  {
+    font-size: 20px;
+  }
+
+  .img-avatar{
+    max-width: 90px;
+    max-height: 90px;
+  }
+
+
   .navbar {
       position: relative;
       /*overflow: hidden;*/
@@ -485,7 +496,7 @@ footer{
   #navbar a {
     font-family: Quicksand-Regular;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     /*text-transform: uppercase; */
     /*color: #991;*/
   }

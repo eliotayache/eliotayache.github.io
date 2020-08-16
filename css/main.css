@@ -489,6 +489,11 @@ footer{
     justify-content: center;
   }
 
+  #contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .navbar {
       position: relative;

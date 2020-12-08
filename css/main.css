@@ -244,6 +244,16 @@ body
   max-width: 45%;
 }
 
+.container{
+    width: 100%;
+    overflow:hidden;
+    display:block;
+    height: 250px;
+}
+#glass{
+    margin-top: -200px;
+}
+
 figure {
   padding-bottom: 20px;
 }

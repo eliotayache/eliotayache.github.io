@@ -170,21 +170,57 @@
 			<p>Gamma-ray bursts are the most powerful explosions in the Universe. They trigger ultra-relativistic outflows that, upon impacting the external medium, produces an afterglow with complex and variable temporal features. Being able to understand these features is a key to understanding the general behavior of GRBs. Analytical solutions have been successful, but cannot capture the full emergent complexity of the flow and launching mechanism. Numerical simulations of the dynamics of these events therefore represent a useful tool to put constraints on the current models. However, capturing all features of a fluid flow at such high energies and over such a number of orders of magnitude as the ones involved in GRBs is very challenging.
 			</p>
 
-            <h2>2D relativistic simulations on a moving mesh</h2>
+			<h3><b>NEW PAPER!</b> <br><a href="https://github.com/eliotayache/GAMMA">GAMMA</a>: a new method for modeling relativistic hydrodynamics and non-thermal emission on a moving mesh</h3>
+			<h4> <i>Eliot H Ayache, Hendrik J van Eerten, Rupert W. Eardley</i> <br>  <a href="https://arxiv.org/abs/2104.09397">arXiv: 2104.09397</a> (submitted to MNRAS)</h4>
 
-            <div id="paperFlares" class="paper">
+            <div id="paper2d" class="paper">
 
                 <div class="papertext">
 
-                    <p>The preliminary results of 2D simulations on a moving mesh are reported in a <a href="https://ras.ac.uk/poster-contest/eliot-ayache">poster</a> presented at the RAS early-career poster exhibition. The code uses a Arbitrary-Lagrangian-Eulerial (ALE) approach that allows us to specify how we want the mesh to use. This is very helpful is sovling multi-scale dynamics and radiation problems.
+					<p>In recent years, dynamical relativistic jet simulation techniques have progressed to a point where it is becoming possible to fully numerically resolve gamma-ray burst (GRB) blast-wave evolution across scales. However, the modeling of emission is currently lagging behind and limits our efforts to fully interpret the physics of GRBs. In this work we combine recent developments in moving-mesh relativistic dynamics with a local treatment of non-thermal emission in a new code: GAMMA.
+					</p> 
+
+					<p>The code involves an arbitrary Lagrangian-Eulerian approach only in the dominant direction of fluid motion which avoids mesh entanglement and associated computational costs. Shock detection, particle injection and local calculation of their evolution including radiative cooling are done at runtime. Even though GAMMA has been designed with GRB physics applications in mind, it is modular such that new solvers and geometries can be implemented easily with a wide range of potential applications. 
+					</p>
+						
+					<p>In this paper, we demonstrate the validity of our approach and compute accurate broadband GRB afterglow radiation from early to late times. Our results show that the spectral cooling break shifts by a factor of ∼ 40 compared to existing methods. Its temporal behavior also significantly changes from the previously calculated temporary steep increase after the jet break. Instead, we find that the cooling break does not shift with time between the relativistic and Newtonian asymptotes when computed from our local algorithm. GAMMA is publicly available at: <a href="https://github.com/eliotayache/GAMMA">https://github.com/eliotayache/GAMMA</a>. 
+					</p>
+
+                </div>
+                <div class="paperimages">
+
+					<figure>
+						<img src="images/Ayache2021/slowcool_lightcurves.png" alt="lcs" width="100%" align="right">
+						<figcaption>
+							Fig. 1: Light curves with the global cooling and local cooling approaches. Above the cooling break (x-ray) the two approaches give different flux values.
+						</figcaption>
+					</figure>
+
+					<figure>
+						<img src="images/Ayache2021/nuc_evolution.png" alt="nuc" width="100%" align="right">
+						<figcaption>
+							Fig. 2: Evolution of the cooling break position with observer time. The global and local cooling approaches differ in behavior during the spreading phase.
+						</figcaption>
+					</figure>
+
+                </div>
+
+
+            </div>
+
+            <h3>Example of a <a href="https://github.com/eliotayache/GAMMA">GAMMA</a> dynamical simulation</h3>
+
+<!--             <div id="paperFlares" class="paper">
+
+                <div class="papertext">
+
+                    <p>The preliminary results of 2D simulations on a moving mesh were reported in a <a href="https://ras.ac.uk/poster-contest/eliot-ayache">poster</a> presented at the RAS early-career poster exhibition. The code uses a Arbitrary-Lagrangian-Eulerial (ALE) approach that allows us to specify how we want the mesh to use. This is very helpful is sovling multi-scale dynamics and radiation problems.
                     </p>
                     <p>Right: Simulation of a hot jet propagating in a diffuse environment. The zones move at fluid velocity.
                     </p>
 
                 </div>
                 <div class="paperimages">
-
-                    <!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/U-XX7X6F_CU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
                     <video width="420" height="315" autoplay loop muted playsinline>
                       <source src="resources/movie.mp4" type="video/mp4" />
@@ -194,7 +230,7 @@
 
 
             </div>
-
+ -->
             <p>Below: Rayleigh-Taylor instability in the contact discontinuity of GRB afterglow blast wave between the forward shock on the right and the reverse shock propagating left towards the back of the ejecta. Top panel shows pressure. Bottom panel shows rest-mass density. 
             (Simulation by Rupert Eardley, Master Student at the University of Bath)</p>
 

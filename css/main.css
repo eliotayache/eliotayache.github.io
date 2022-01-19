@@ -37,6 +37,11 @@ footer
 }
 
 
+#canvas-warp
+{
+  z-index: -1;
+}
+
 /* ===================== */
 /*  Def. properties for: */
 /*    title image        */
@@ -72,7 +77,7 @@ footer
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center -300px;
-  z-index: -1;
+  z-index: 99;
 }
 
 #Blog{
@@ -92,6 +97,7 @@ footer
 
 .titleimage
 {
+    z-index: 99;
     height: 100%;
     width: 100%;
 
@@ -287,12 +293,6 @@ figcaption {
   text-align: justify;
   max-width: 800px;
   font-size: 14px;
-}
-
-.wide-section{
-  position: absolute;
-  width: 100%;
-  background-color: pink;
 }
 
 .wrap-about{
